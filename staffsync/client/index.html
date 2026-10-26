@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StaffSync - Modern Human Resource Management System</title>
+    <meta name="description" content="Enterprise HRMS platform for employee directory, attendance tracking, leave approval workflows, training programs, announcements, notifications, and analytics." />
+    <meta property="og:title" content="StaffSync - Modern Human Resource Management System" />
+    <meta property="og:description" content="Enterprise HRMS platform for employee directory, attendance tracking, leave approval workflows, training programs, announcements, notifications, and analytics." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // In AI Studio environment, HMR WebSocket is disabled. Ignore Vite client WebSocket errors.
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event && event.reason;
+        var msg = (reason && (reason.message || String(reason))) || '';
+        var stack = (reason && reason.stack) || '';
+        if (msg.includes('WebSocket') || msg.includes('vite') || stack.includes('@vite/client')) {
+          event.preventDefault();
+          event.stopImmediatePropagation && event.stopImmediatePropagation();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        var msg = (event && event.message) || '';
+        var filename = (event && event.filename) || '';
+        if (msg.includes('WebSocket') || filename.includes('@vite/client')) {
+          event.preventDefault();
+          event.stopImmediatePropagation && event.stopImmediatePropagation();
+        }
+      }, true);
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "name": "staffsync",
+  "private": true,
+  "version": "1.0.0",
+  "description": "StaffSync human resource management system backend.",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "build": "npm --prefix ../client run build",
+    "start": "NODE_ENV=production tsx server.ts",
+    "preview": "npm --prefix ../client run preview",
+    "clean": "rm -rf ../client/dist",
+    "test": "tsx tests/api.test.ts",
+    "lint": "npm run lint:server && npm --prefix ../client run lint",
+    "lint:server": "tsc --noEmit"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.11.4"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^3.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^22.14.0",
+    "tsx": "^4.21.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  }
+}
