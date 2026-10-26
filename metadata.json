@@ -1,0 +1,6 @@
+{
+  "name": "StaffSync - Modern Human Resource Management System",
+  "description": "Enterprise HRMS platform for employee directory, attendance tracking, leave approval workflows, training programs, announcements, notifications, and analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
